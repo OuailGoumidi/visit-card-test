@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+
+    overflow: hidden;
+}
+
+body {
+    background-color: #135D66;
+    font-family: Roboto;
+}
+
+:root {
+    --defaultPadding: 10px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(logo.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: 50px auto;
+}
+
+h1 {
+    background-color: #77B0AA;
+    padding: var(--defaultPadding);
+    width: fit-content;
+    margin: auto;
+    font-size: 27px;
+    font-style: italic;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.479);
+}
+
+.cantact {
+    margin: auto;
+    margin-top: 50px;
+    min-width: 250px;
+    max-width: 60%;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+
+}
+
+.phone-number {
+    margin: 10px;
+    display: flex;
+    padding: 10px;
+
+    flex-flow: row wrap;
+}
+.email-adress {
+    display: flex;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    flex-flow: row wrap;
+}
+
+.call,.email {
+    background-color: #77B0AA;
+    width: calc((100% - 5%)/3);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.number,.address {
+    background-color: #77B0AA;
+    text-align: center;
+    width: calc(100% - ((100%)/3) - 5%);
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-left: 5%;
+}
+
+.call:hover ,.number:hover,.email:hover,.address:hover {
+    background-color: #E3FEF7;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
